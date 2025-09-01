@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9176b3c9848492505be4a1a75432188c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9176b3c9848492505be4a1a75432188c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9176b3c9848492505be4a1a75432188c = L.map(
+                "map_9176b3c9848492505be4a1a75432188c",
+                {
+                    center: [41.3851, 2.1734],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_77e09e7e503fd1447e3bc266701e8c4f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9176b3c9848492505be4a1a75432188c);
+        
+    
+            var marker_f7443193723bb366faff9b3c77d82a10 = L.marker(
+                [41.3838, 2.1699],
+                {}
+            ).addTo(map_9176b3c9848492505be4a1a75432188c);
+        
+    
+            var icon_3b9539208acf453082f5aa17ad137f52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f7443193723bb366faff9b3c77d82a10.setIcon(icon_3b9539208acf453082f5aa17ad137f52);
+        
+    
+        var popup_1e756259bce433b931af33028e505abf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ecb10a2473cc8922131a7446c89dce73 = $(`<div id="html_ecb10a2473cc8922131a7446c89dce73" style="width: 100.0%; height: 100.0%;">Jour 1 - Hotel Ciutat Vella<br>15h00 - Arrivée</div>`)[0];
+            popup_1e756259bce433b931af33028e505abf.setContent(html_ecb10a2473cc8922131a7446c89dce73);
+        
+
+        marker_f7443193723bb366faff9b3c77d82a10.bindPopup(popup_1e756259bce433b931af33028e505abf)
+        ;
+
+        
+    
+    
+            var marker_9664e975e518ad2f04ded0cd64e66d0e = L.marker(
+                [41.3809, 2.1731],
+                {}
+            ).addTo(map_9176b3c9848492505be4a1a75432188c);
+        
+    
+            var icon_636b67ff9002e73c49e305978357c836 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9664e975e518ad2f04ded0cd64e66d0e.setIcon(icon_636b67ff9002e73c49e305978357c836);
+        
+    
+        var popup_8aeb392a8cf3068612f600ccfbfc8906 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d185066f8071bc5afc8c038d68557e75 = $(`<div id="html_d185066f8071bc5afc8c038d68557e75" style="width: 100.0%; height: 100.0%;">Jour 1 - Las Ramblas<br>15h30 - Promenade</div>`)[0];
+            popup_8aeb392a8cf3068612f600ccfbfc8906.setContent(html_d185066f8071bc5afc8c038d68557e75);
+        
+
+        marker_9664e975e518ad2f04ded0cd64e66d0e.bindPopup(popup_8aeb392a8cf3068612f600ccfbfc8906)
+        ;
+
+        
+    
+    
+            var marker_fd7201ad409aaeb37bc95852eb2e10c8 = L.marker(
+                [41.382, 2.1726],
+                {}
+            ).addTo(map_9176b3c9848492505be4a1a75432188c);
+        
+    
+            var icon_ff5b6a4a52102f2687ff538acd7283a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fd7201ad409aaeb37bc95852eb2e10c8.setIcon(icon_ff5b6a4a52102f2687ff538acd7283a3);
+        
+    
+        var popup_ab5c7f6429041f142cda3b98c36ec21e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dd08cb29516b6a6cd7b986627ebeeee3 = $(`<div id="html_dd08cb29516b6a6cd7b986627ebeeee3" style="width: 100.0%; height: 100.0%;">Jour 1 - Mercat de la Boqueria<br>16h00 - Tapas</div>`)[0];
+            popup_ab5c7f6429041f142cda3b98c36ec21e.setContent(html_dd08cb29516b6a6cd7b986627ebeeee3);
+        
+
+        marker_fd7201ad409aaeb37bc95852eb2e10c8.bindPopup(popup_ab5c7f6429041f142cda3b98c36ec21e)
+        ;
+
+        
+    
+    
+            var marker_692768b36fd36a6e9ec956e131dac6e7 = L.marker(
+                [41.3839, 2.1763],
+                {}
+            ).addTo(map_9176b3c9848492505be4a1a75432188c);
+        
+    
+            var icon_a15f894abb23bdd87b8da0f6910e0155 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_692768b36fd36a6e9ec956e131dac6e7.setIcon(icon_a15f894abb23bdd87b8da0f6910e0155);
+        
+    
+        var popup_06e47b326c3e3dad11b9b0b5916b3e1b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c6cf011073e92eb3218355597a7d5ee = $(`<div id="html_7c6cf011073e92eb3218355597a7d5ee" style="width: 100.0%; height: 100.0%;">Jour 1 - Quartier Gothique<br>17h00 - Balade</div>`)[0];
+            popup_06e47b326c3e3dad11b9b0b5916b3e1b.setContent(html_7c6cf011073e92eb3218355597a7d5ee);
+        
+
+        marker_692768b36fd36a6e9ec956e131dac6e7.bindPopup(popup_06e47b326c3e3dad11b9b0b5916b3e1b)
+        ;
+
+        
+    
+    
+            var marker_4f19cbc5511cb408f2fa71456295c552 = L.marker(
+                [41.384, 2.1768],
+                {}
+            ).addTo(map_9176b3c9848492505be4a1a75432188c);
+        
+    
+            var icon_54e594326dd5275ab8e4726eb22e9d7d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4f19cbc5511cb408f2fa71456295c552.setIcon(icon_54e594326dd5275ab8e4726eb22e9d7d);
+        
+    
+        var popup_a3b8dacca684a1e79afac3ffe62e00a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ea034ada5473f4f13b0b1e9e4319ad5 = $(`<div id="html_8ea034ada5473f4f13b0b1e9e4319ad5" style="width: 100.0%; height: 100.0%;">Jour 1 - Cathédrale Sainte-Croix<br>18h00 - Extérieur</div>`)[0];
+            popup_a3b8dacca684a1e79afac3ffe62e00a6.setContent(html_8ea034ada5473f4f13b0b1e9e4319ad5);
+        
+
+        marker_4f19cbc5511cb408f2fa71456295c552.bindPopup(popup_a3b8dacca684a1e79afac3ffe62e00a6)
+        ;
+
+        
+    
+    
+            var poly_line_e82723facbb099b6145922ae41ec4135 = L.polyline(
+                [[41.3838, 2.1699], [41.3809, 2.1731], [41.382, 2.1726], [41.3839, 2.1763], [41.384, 2.1768]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9176b3c9848492505be4a1a75432188c);
+        
+    
+            var marker_276ace8b1a8e0e10c6ddc6f995f1aa4f = L.marker(
+                [41.3838, 2.1699],
+                {}
+            ).addTo(map_9176b3c9848492505be4a1a75432188c);
+        
+    
+            var icon_8da6365dfa0981f5a979c9b1c2035ae9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_276ace8b1a8e0e10c6ddc6f995f1aa4f.setIcon(icon_8da6365dfa0981f5a979c9b1c2035ae9);
+        
+    
+        var popup_05c8accc66352eb9d21eb09e0ef5cd68 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_32bc016447d74402bd0c979e404a2ad3 = $(`<div id="html_32bc016447d74402bd0c979e404a2ad3" style="width: 100.0%; height: 100.0%;">Jour 2 - Hotel Ciutat Vella<br>09h30 - Départ</div>`)[0];
+            popup_05c8accc66352eb9d21eb09e0ef5cd68.setContent(html_32bc016447d74402bd0c979e404a2ad3);
+        
+
+        marker_276ace8b1a8e0e10c6ddc6f995f1aa4f.bindPopup(popup_05c8accc66352eb9d21eb09e0ef5cd68)
+        ;
+
+        
+    
+    
+            var marker_cccf41506eefc87ab8a113d6a275b5bd = L.marker(
+                [41.3917, 2.1649],
+                {}
+            ).addTo(map_9176b3c9848492505be4a1a75432188c);
+        
+    
+            var icon_29c929c1d4c21a730e7f119d71859dd0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cccf41506eefc87ab8a113d6a275b5bd.setIcon(icon_29c929c1d4c21a730e7f119d71859dd0);
+        
+    
+        var popup_3583998819e7df09111e437e09713740 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_37993129f0e48911acd7d7d957592d9f = $(`<div id="html_37993129f0e48911acd7d7d957592d9f" style="width: 100.0%; height: 100.0%;">Jour 2 - Casa Batlló<br>10h45 - Visite (billet réservé)</div>`)[0];
+            popup_3583998819e7df09111e437e09713740.setContent(html_37993129f0e48911acd7d7d957592d9f);
+        
+
+        marker_cccf41506eefc87ab8a113d6a275b5bd.bindPopup(popup_3583998819e7df09111e437e09713740)
+        ;
+
+        
+    
+    
+            var marker_78b2f9ff2b684026b60638a338c1fbd5 = L.marker(
+                [41.4039, 2.1505],
+                {}
+            ).addTo(map_9176b3c9848492505be4a1a75432188c);
+        
+    
+            var icon_590e41ed3dc39f6dec41275b5620c86d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_78b2f9ff2b684026b60638a338c1fbd5.setIcon(icon_590e41ed3dc39f6dec41275b5620c86d);
+        
+    
+        var popup_f0cfa79270c8d379f2d055373630806e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b444d2195b5ac1f40e57eaf2ff8336a6 = $(`<div id="html_b444d2195b5ac1f40e57eaf2ff8336a6" style="width: 100.0%; height: 100.0%;">Jour 2 - Casa Vicens<br>15h00 - Visite (billet réservé)</div>`)[0];
+            popup_f0cfa79270c8d379f2d055373630806e.setContent(html_b444d2195b5ac1f40e57eaf2ff8336a6);
+        
+
+        marker_78b2f9ff2b684026b60638a338c1fbd5.bindPopup(popup_f0cfa79270c8d379f2d055373630806e)
+        ;
+
+        
+    
+    
+            var marker_2aa1fc48c1d27183272aaa4ff4ca444a = L.marker(
+                [41.4036, 2.1744],
+                {}
+            ).addTo(map_9176b3c9848492505be4a1a75432188c);
+        
+    
+            var icon_3f4c6186e7f45944048a10db10f59127 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2aa1fc48c1d27183272aaa4ff4ca444a.setIcon(icon_3f4c6186e7f45944048a10db10f59127);
+        
+    
+        var popup_d117d2d2d4aeede2004c8cdee2af84db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_480391ff21b088db252cc825a195740c = $(`<div id="html_480391ff21b088db252cc825a195740c" style="width: 100.0%; height: 100.0%;">Jour 2 - Sagrada Família<br>16h30 - Extérieur + parc</div>`)[0];
+            popup_d117d2d2d4aeede2004c8cdee2af84db.setContent(html_480391ff21b088db252cc825a195740c);
+        
+
+        marker_2aa1fc48c1d27183272aaa4ff4ca444a.bindPopup(popup_d117d2d2d4aeede2004c8cdee2af84db)
+        ;
+
+        
+    
+    
+            var poly_line_f20cebf3b8b4eb575011bc4deeac9d89 = L.polyline(
+                [[41.3838, 2.1699], [41.3917, 2.1649], [41.4039, 2.1505], [41.4036, 2.1744]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9176b3c9848492505be4a1a75432188c);
+        
+    
+            var marker_1e7d0bb5f161c9f97810c32d7af30b91 = L.marker(
+                [41.3838, 2.1699],
+                {}
+            ).addTo(map_9176b3c9848492505be4a1a75432188c);
+        
+    
+            var icon_8313aa46fd049b5951d7067cf61768c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1e7d0bb5f161c9f97810c32d7af30b91.setIcon(icon_8313aa46fd049b5951d7067cf61768c9);
+        
+    
+        var popup_b5ef52a224cf47c5da79522ff3a4fdc8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_43ba53c27409f368c422698aa1350a18 = $(`<div id="html_43ba53c27409f368c422698aa1350a18" style="width: 100.0%; height: 100.0%;">Jour 3 - Hotel Ciutat Vella<br>09h00 - Départ</div>`)[0];
+            popup_b5ef52a224cf47c5da79522ff3a4fdc8.setContent(html_43ba53c27409f368c422698aa1350a18);
+        
+
+        marker_1e7d0bb5f161c9f97810c32d7af30b91.bindPopup(popup_b5ef52a224cf47c5da79522ff3a4fdc8)
+        ;
+
+        
+    
+    
+            var marker_e1c09f402d334041397f9a7286c49fca = L.marker(
+                [41.4145, 2.1527],
+                {}
+            ).addTo(map_9176b3c9848492505be4a1a75432188c);
+        
+    
+            var icon_6a04552d30b883fe092290eac59f4023 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e1c09f402d334041397f9a7286c49fca.setIcon(icon_6a04552d30b883fe092290eac59f4023);
+        
+    
+        var popup_067caf8575f872755f2f9c34e0e60f6b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_57c8b8a6fce83f58dd51fab589836ae4 = $(`<div id="html_57c8b8a6fce83f58dd51fab589836ae4" style="width: 100.0%; height: 100.0%;">Jour 3 - Parc Güell<br>10h00 - Visite (billet réservé)</div>`)[0];
+            popup_067caf8575f872755f2f9c34e0e60f6b.setContent(html_57c8b8a6fce83f58dd51fab589836ae4);
+        
+
+        marker_e1c09f402d334041397f9a7286c49fca.bindPopup(popup_067caf8575f872755f2f9c34e0e60f6b)
+        ;
+
+        
+    
+    
+            var marker_f3d2be15450cd8cf072780c5a32e7eec = L.marker(
+                [41.389, 2.186],
+                {}
+            ).addTo(map_9176b3c9848492505be4a1a75432188c);
+        
+    
+            var icon_c171ab281d983735fadf491060ae8271 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f3d2be15450cd8cf072780c5a32e7eec.setIcon(icon_c171ab281d983735fadf491060ae8271);
+        
+    
+        var popup_7ee3df5907b38cadb55337a3235457a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a36e78019187cb9915bc88c485fd47b9 = $(`<div id="html_a36e78019187cb9915bc88c485fd47b9" style="width: 100.0%; height: 100.0%;">Jour 3 - Parc de la Ciutadella<br>14h00 - Balade & détente</div>`)[0];
+            popup_7ee3df5907b38cadb55337a3235457a8.setContent(html_a36e78019187cb9915bc88c485fd47b9);
+        
+
+        marker_f3d2be15450cd8cf072780c5a32e7eec.bindPopup(popup_7ee3df5907b38cadb55337a3235457a8)
+        ;
+
+        
+    
+    
+            var marker_48f9162aa67bc2754efffdcbf5478b86 = L.marker(
+                [41.3635, 2.1658],
+                {}
+            ).addTo(map_9176b3c9848492505be4a1a75432188c);
+        
+    
+            var icon_3758a26dd49a560cd38c5ce75c8dbd57 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_48f9162aa67bc2754efffdcbf5478b86.setIcon(icon_3758a26dd49a560cd38c5ce75c8dbd57);
+        
+    
+        var popup_61104d60a1e45a5f0d0c37b945b95a6d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_424c695470692952a07447ff4f6b5a25 = $(`<div id="html_424c695470692952a07447ff4f6b5a25" style="width: 100.0%; height: 100.0%;">Jour 3 - Montjuïc<br>17h00 - Montée & panorama</div>`)[0];
+            popup_61104d60a1e45a5f0d0c37b945b95a6d.setContent(html_424c695470692952a07447ff4f6b5a25);
+        
+
+        marker_48f9162aa67bc2754efffdcbf5478b86.bindPopup(popup_61104d60a1e45a5f0d0c37b945b95a6d)
+        ;
+
+        
+    
+    
+            var poly_line_41b886b25bbb34a97d1eb953dfbc9ab7 = L.polyline(
+                [[41.3838, 2.1699], [41.4145, 2.1527], [41.389, 2.186], [41.3635, 2.1658]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9176b3c9848492505be4a1a75432188c);
+        
+    
+            var marker_1f24386ad72e150da620074d32941cae = L.marker(
+                [41.3838, 2.1699],
+                {}
+            ).addTo(map_9176b3c9848492505be4a1a75432188c);
+        
+    
+            var icon_4b5f6d708fbccbbd6527abf9a02ae4fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_1f24386ad72e150da620074d32941cae.setIcon(icon_4b5f6d708fbccbbd6527abf9a02ae4fc);
+        
+    
+        var popup_ec2b26ab5687f9f84ad9eac8c4ed4ede = L.popup({"maxWidth": "100%"});
+
+        
+            var html_35372f89c001b592ce1ede78ad7bac46 = $(`<div id="html_35372f89c001b592ce1ede78ad7bac46" style="width: 100.0%; height: 100.0%;">Jour 4 - Hotel Ciutat Vella<br>09h15 - Départ</div>`)[0];
+            popup_ec2b26ab5687f9f84ad9eac8c4ed4ede.setContent(html_35372f89c001b592ce1ede78ad7bac46);
+        
+
+        marker_1f24386ad72e150da620074d32941cae.bindPopup(popup_ec2b26ab5687f9f84ad9eac8c4ed4ede)
+        ;
+
+        
+    
+    
+            var marker_8016bc99ae9cf82710b2e2e521e80542 = L.marker(
+                [41.387, 2.1754],
+                {}
+            ).addTo(map_9176b3c9848492505be4a1a75432188c);
+        
+    
+            var icon_03aea93afa0de530c91daa5773ce5560 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_8016bc99ae9cf82710b2e2e521e80542.setIcon(icon_03aea93afa0de530c91daa5773ce5560);
+        
+    
+        var popup_84d8084436186edeaee5ec17c9bc5c4b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9cc8c5a1a2d2f42a81872dfa35c9d2c3 = $(`<div id="html_9cc8c5a1a2d2f42a81872dfa35c9d2c3" style="width: 100.0%; height: 100.0%;">Jour 4 - Palau de la Música Catalana<br>10h00 - Visite guidée (billet réservé)</div>`)[0];
+            popup_84d8084436186edeaee5ec17c9bc5c4b.setContent(html_9cc8c5a1a2d2f42a81872dfa35c9d2c3);
+        
+
+        marker_8016bc99ae9cf82710b2e2e521e80542.bindPopup(popup_84d8084436186edeaee5ec17c9bc5c4b)
+        ;
+
+        
+    
+    
+            var marker_109de80b56689cc26e39d78078114533 = L.marker(
+                [41.3839, 2.1821],
+                {}
+            ).addTo(map_9176b3c9848492505be4a1a75432188c);
+        
+    
+            var icon_dd319d71fb7a8b9d2306b480f05ed477 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_109de80b56689cc26e39d78078114533.setIcon(icon_dd319d71fb7a8b9d2306b480f05ed477);
+        
+    
+        var popup_5ea10777d4ea289d38d8239796e4ec7d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d7f63ae6929bd79d8f7bfc36e3e3a45a = $(`<div id="html_d7f63ae6929bd79d8f7bfc36e3e3a45a" style="width: 100.0%; height: 100.0%;">Jour 4 - Santa Maria del Mar<br>12h00 - Extérieur/intérieur</div>`)[0];
+            popup_5ea10777d4ea289d38d8239796e4ec7d.setContent(html_d7f63ae6929bd79d8f7bfc36e3e3a45a);
+        
+
+        marker_109de80b56689cc26e39d78078114533.bindPopup(popup_5ea10777d4ea289d38d8239796e4ec7d)
+        ;
+
+        
+    
+    
+            var marker_daa236397458ddb542f6bc52a4bbb015 = L.marker(
+                [41.391, 2.167],
+                {}
+            ).addTo(map_9176b3c9848492505be4a1a75432188c);
+        
+    
+            var icon_ba336ec6d7ebbf4dfe706aabd04d8f53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_daa236397458ddb542f6bc52a4bbb015.setIcon(icon_ba336ec6d7ebbf4dfe706aabd04d8f53);
+        
+    
+        var popup_4bab3ff608a86814f498a4b7b19ee694 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4bee44e290a1f6eafc76d40ed3a04f2b = $(`<div id="html_4bee44e290a1f6eafc76d40ed3a04f2b" style="width: 100.0%; height: 100.0%;">Jour 4 - Zara Passeig de Gràcia<br>15h30 - Shopping</div>`)[0];
+            popup_4bab3ff608a86814f498a4b7b19ee694.setContent(html_4bee44e290a1f6eafc76d40ed3a04f2b);
+        
+
+        marker_daa236397458ddb542f6bc52a4bbb015.bindPopup(popup_4bab3ff608a86814f498a4b7b19ee694)
+        ;
+
+        
+    
+    
+            var marker_fd0b0c16ced4848e261de5e7d2b67eac = L.marker(
+                [41.387, 2.1701],
+                {}
+            ).addTo(map_9176b3c9848492505be4a1a75432188c);
+        
+    
+            var icon_8cdfed19763ee9229c44c504d39c147c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_fd0b0c16ced4848e261de5e7d2b67eac.setIcon(icon_8cdfed19763ee9229c44c504d39c147c);
+        
+    
+        var popup_12d6f21c9af385dbf2353632ac092d6d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_65c74a0661cc3b6ba4fc19888add7f72 = $(`<div id="html_65c74a0661cc3b6ba4fc19888add7f72" style="width: 100.0%; height: 100.0%;">Jour 4 - Plaça Catalunya<br>17h00 - Fin promenade</div>`)[0];
+            popup_12d6f21c9af385dbf2353632ac092d6d.setContent(html_65c74a0661cc3b6ba4fc19888add7f72);
+        
+
+        marker_fd0b0c16ced4848e261de5e7d2b67eac.bindPopup(popup_12d6f21c9af385dbf2353632ac092d6d)
+        ;
+
+        
+    
+    
+            var poly_line_4f4935166de10be4f784b5515883df1e = L.polyline(
+                [[41.3838, 2.1699], [41.387, 2.1754], [41.3839, 2.1821], [41.391, 2.167], [41.387, 2.1701]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9176b3c9848492505be4a1a75432188c);
+        
+</script>
+</html>
